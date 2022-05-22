@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+</svg>
+    <style>
+        body,
+        html {
+            height: 100%;
+            background-image: url('managerBackground.jpg');
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .container {
+            width: 400px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 250px;
+            margin-bottom: auto;
+        }
+        
+        input {
+            width: 100%;
+        }
+    </style>
+</head>
+<form id="searchForm" name="searchForm" action="manager.php" method="post">
+
+    <body>
+        <div style="width: 100%;">
+            <div class="container">
+                <h3 class="text-center" style="color: rgb(10, 10, 10);">Check Cashiers</h3>
+                <button type="submit" class="btn btn-primary col-12 cashiers-btn" form="searchForm" name="search" value="cashiers-search">Show Cashiers</button>
+                <h3 class="text-center" style="color: rgb(10, 10, 10);">Check Customers</h3>
+                <button type="submit" class="btn btn-primary col-12 customers-btn" form="searchForm" name="search" value="customers-search">Show Customers</button>
+                <h3 class="text-center" style="color: rgb(10, 10, 10);">Check Garages</h3>
+                <button type="submit" class="btn btn-primary col-12 garages-btn" form="searchForm" name="search" value="garages-search">Show Garages</button>
+                <h3 class="text-center" style="color: rgb(10, 10, 10);">Check Current Customers</h3>
+                <button type="submit" class="btn btn-primary col-12 reservations-btn" form="searchForm" name="search" value="currentCustomers-search">Show Current Customers</button>
+                <h3 class="text-center" style="color: rgb(10, 10, 10);">Check Customer Reservations</h3>
+                <button type="submit" class="btn btn-primary col-12 reservations-btn" form="searchForm" name="search" value="reservations-search">Show Reservations</button>
+                <h3 class="text-center" style="color: rgb(10, 10, 10);">Check Confirmed Reservations</h3>
+                <button type="submit" class="btn btn-primary col-12 reservations-btn" form="searchForm" name="search" value="confirmedReserve-search">Show Reservations</button>
+            </div>
+    </body>
+</form>
+
+</html>
